@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="join.do" method="get" name="frm">
+        <label>ID</label>
+        <input type="text" name="userid" size="20" id="userid"><br>
+        <label>PW</label>
+        <input type="password" name="pwd" size="20" id="pwd" placeholder="암호를 입력해주세요"><br>
+        <label>bonmun</label><br>
+        <textarea name="opinion" cols="20" rows="3"></textarea><br>
+        <select name="city" id="city">
+            <option value="gangbukgu">gangbukgu</option>
+            <option value="gangnamgu">gangnamgu</option>
+            <option value="seochogu">seochogu</option>
+            <option value="joongwongu">joongwongu</option>
+            <option value="bundanggu">bundanggu</option>
+        </select>
+
+        <select name="city" id="city" multiple>
+            <option value="gangbukgu">gangbukgu</option>
+            <option value="gangnamgu">gangnamgu</option>
+            <option value="seochogu">seochogu</option>
+            <option value="joongwongu">joongwongu</option>
+            <option value="bundanggu">bundanggu</option>
+        </select>
+
+        <fieldset>
+            <legend>좋아하는 과일</legend>
+            <input type="checkbox" id="banana" name="banana" value="banana">
+            <label for="banana">banana</label>
+            <input type="checkbox" id="apple" name="apple" value="apple">
+            <label for="apple">apple</label>
+            <input type="checkbox" id="orange" name="orange" value="orange">
+            <label for="orange">orange</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>개인성격</legend>
+            <input type="radio" id="fast" name="fast" value="fast">
+            <label for="fast">fast</label>
+            <input type="radio" id="normal" name="normal" value="normal">
+            <label for="normal">normal</label>
+            <input type="radio" id="slow" name="slow" value="slow">
+            <label for="slow">slow</label>
+        </fieldset>
+
+
+
+
+        <input type="button" value="확인" disabled>
+        <input type="reset" value="취소"><br>
+    </form>
+</body>
+</html>
