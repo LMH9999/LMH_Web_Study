@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoojiho Request(By LMH)</title>
+    <style>
+      .wrap {
+        max-width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 230px 230px 230px;
+        overflow: hidden;
+        gap: 10px;
+        font-size: 30px;
+        color: white;
+        text-align: justify;
+        line-height: 2;
+      }
+      .grid-item{
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .gitemA {
+        grid-row: 1/3;
+        background-image: url(./images/1.jpg);
+      }
+      .gitemB {
+        background-image: url(./images/2.jpg);
+      }
+      .gitemC {
+        grid-column: 3/5;
+        align-items: center;
+        background-color: black;
+      }
+      .gitemD {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        background-image: url(./images/3.jpg);
+      }
+      .gitemE {
+        grid-column: 3/5;
+        grid-row: 2/3;
+        background-image: url(./images/4.jpg);
+      }
+      .gitemF{
+        align-items: center;
+        background-color: black;
+        font-size: 1.2em;
+        text-align: center;
+        font-weight: bold;
+      }
+      .gitemG {
+        grid-column: 3/5;
+        grid-row: 3/4;
+        background-image: url(./images/5.jpg);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="grid-container">
+        <div class="grid-item gitemA"></div>
+        <div class="grid-item gitemB"></div>
+        <div class="grid-item gitemC line">국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다.
+          국무총리·국무위원 또는 정부위원은 국회나 그 위원회에 출석하여 국정처리상황을 보고하거나 의견을 진술하고 질문에 응답할 수 있다.</div>
+        <div class="grid-item gitemD"></div>
+        <div class="grid-item gitemE"></div>
+        <div class="grid-item gitemF line">헌법재판소는 법관의 자격을 가진 9인의 재판관으로 구성하며, 재판관은 대통령이 임명한다.</div>
+        <div class="grid-item gitemG"></div>
+      </div>
+    </div>
+  </body>
+</html>
