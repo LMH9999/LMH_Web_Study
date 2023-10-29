@@ -4,7 +4,7 @@
 
 <details>
 <summary>
-  언어
+  ⚙언어
 </summary>
   <br>
   
@@ -14,7 +14,7 @@
 
 <details>
 <summary>
-  사용 교재
+  📔사용 교재
 </summary>
   <br>
 
