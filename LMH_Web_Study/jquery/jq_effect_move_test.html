@@ -9,11 +9,11 @@
         $('.btn1').on('click', function () {
           let ts = $(this);
           if (ts.text() == '숨김') {
-            $('.wrap').slideUp(5000, function () {
+            $('.wrap').slideUp(1000, function () {
               $('.btn1').text('표시');
             });
           } else {
-            $('.wrap').slideDown(5000, function () {
+            $('.wrap').slideDown(1000, function () {
               $('.btn1').text('숨김');
             });
           }

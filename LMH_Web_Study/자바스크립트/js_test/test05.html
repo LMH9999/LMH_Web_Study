@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test02.css">
+</head>
+<body>
+    <div class="alert-box" id="alert" onclick="알림창제어('none')">Alert 박스</div>
+    <button onclick="알림창제어('block','아이디를 입력 안하셨어요')">버튼1</button>
+    <button onclick="알림창제어('block','비번을 입력 안하셨어요')">버튼2</button>
+    <button id="close">X</button>
+    <script>
+        function 알림창제어(구멍1,구멍2){
+            document.getElementById('alert').style.display=구멍1;
+            document.getElementById('alert').innerHTML = 구멍2;
+        }
+        document.getElementById('close').addEventListener('click',function(){
+            document.getElementById('alert').style.display='none';
+        })
+    </script>
+</body>
+</html>
